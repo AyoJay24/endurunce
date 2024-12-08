@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>MyJourney - Endurunce</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/logRun">Go4Run</a>
+      <a href="https://www.healthline.com/health/exercise-fitness/endurance-vs-stamina">BuildUrEdurun</a>
+      <a href="https://www.healthline.com/health/fitness-exercise/at-home-workouts#_noHeaderPrefixedContent">WorkoutM0re</a>
+      <a href="/leaderboard">Leaderboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>MyJourney</h2>
+      <form action="/myJourney" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

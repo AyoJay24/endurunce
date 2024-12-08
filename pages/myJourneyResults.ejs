@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>MyJourney Results - Endurunce</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/logRun">Go4Run</a>
+      <a href="https://www.healthline.com/health/exercise-fitness/endurance-vs-stamina">BuildUrEdurun</a>
+      <a href="https://www.healthline.com/health/fitness-exercise/at-home-workouts#_noHeaderPrefixedContent">WorkoutM0re</a>
+      <a href="/leaderboard">Leaderboard</a>
+      <a href="/myJourney">MyJourney</a>
+      <form action="/adminRemove" method="POST" onsubmit="return confirm('Are you sure you want to remove all runners?');" style="display: inline;">
+        <button type="submit">Remove All Runners</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <section class="results-section">
+      <h2>MyJourney Results</h2>
+      
+      <% if (success_msg) { %>
+        <div class="alert success"><%= success_msg %></div>
+      <% } %>
+      <% if (error_msg) { %>
+        <div class="alert error"><%= error_msg %></div>
+      <% } %>
+
+      <p>Showing runs for <strong><%= user.name %></strong>, Age: <strong><%= user.age %></strong></p>
+
+      <% if (runs.length === 0) { %>
+        <p class="no-runs">No runs found for this user.</p>
+      <% } else { %>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Distance (miles)</th>
+              <th>Time (minutes)</th>
+              <th>Goal</th>
+              <th>Weather</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% runs.forEach(function(run) { %>
+              <tr>
+                <td><%= run.date.toDateString() %></td>
+                <td><%= run.distance %></td>
+                <td><%= run.time %></td>
+                <td><%= run.goal ? run.goal : 'N/A' %></td>
+                <td>
+                  <%= run.weather.description %>, 
+                  Temp: <%= run.weather.temperature %>°F, 
+                  Humidity: <%= run.weather.humidity %>%, 
+                  Wind: <%= run.weather.windSpeed %> mph
+                </td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      <% } %>
+      
+      <a href="/myJourney">Back to MyJourney</a>
+    </section>
+  </main>
+</body>
+</html>

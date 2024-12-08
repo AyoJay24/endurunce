@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>Go Run</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <section class="welcome-section">
+        <div class="image2">
+          <img src="run1.jpg" alt="Welcome Image">
+          <div class="title">GO 4 A RUN <br><br> </div><br><br>
+          <a href="/">HOME</a>
+        </div>
+      </section>
+
+      <div class="form">
+        <h2>Running Information Form</h2>
+    
+        <form id="acc-form" action="/submitInfo" method="post">
+          <label>Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+          <label>Age:</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age" required>
+    
+          <label>Running Distance (in miles):</label>
+          <input type="number" id="distance" name="distance" placeholder="Enter distance" required>
+    
+          <label>Running Time (in minutes):</label>
+          <input type="number" id="time" name="time" placeholder="Enter time" required>
+    
+          <label>Running Goal:</label>
+          <textarea id="goal" name="goal" placeholder="What is your running goal?" rows="4"></textarea>
+
+          <label>City:</label>
+          <input type="text" id="city" name="city" placeholder="Enter your city" required>
+    
+          <button type="submit">Submit</button>
+        </form>
+      
+      </div>
+  
+
+</body>
