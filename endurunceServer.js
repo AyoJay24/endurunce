@@ -1,21 +1,3 @@
-
-/*CHANGES*/
-/** about api if a city is entered and it doesnt exist it will throw an error idc tho its not that serious can easily be fixed anyways */
-/** LEADERBOARD ADDED IT ADDTHE THE MILES OF PPL WITH THE SAME NAME CAN BE CHANGED */
-/**MY JOURNEY LOOKS UP PPL WITH SAME NAME AND AGE AND DICPLAYS EACH INDICIDUAL RUN LOG */
-/**MOVED AROUND FILES AND MADE FOLDERS FOR THEM */
-/**THERES PROBABLY UNECESSARY CODE BUT IF IT AINT BROKE DONT FIX IT, TOO LAZY TO CHANGE */
-/**ANY SUGGESTIONS??? */
-/**ALSO PRETTY MUCH ALL THE CONSOLE LOG STATEMENTS CAN BE DELETED IF U WANT WAS USED FOR DEBUGGING 
- * ITS STILL COOL TO SEE THO
-*/
-/** REMOVE ALL RUNNERS BUTTON IDK JUST PUT IT THERE IT WORKS THO */
-
-/**API addded */
-/**npm install axios (for the weather api) */
-/**npm install express-rate-limit */
-/**npm install express-validator */
-/*npm install axios express-rate-limit express-session connect-flash express-basic-auth*/
 const rateLimit = require('express-rate-limit');
 
 

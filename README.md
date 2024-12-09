@@ -13,11 +13,11 @@
 npm install 
 npm install mongodb
 
-*API addded*
-npm install axios 
-npm install express-rate-limit 
-npm install express-validator 
-npm install axios express-rate-limit express-session connect-flash express-basic-auth
+*API addded* <br>
+npm install axios <br>
+npm install express-rate-limit <br>
+npm install express-validator <br>
+npm install axios express-rate-limit express-session connect-flash express-basic-auth <br>
 
 *To Run Sever*
 node endurunceServer.js <portNumber>
