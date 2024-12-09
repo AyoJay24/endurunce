@@ -10,7 +10,7 @@
 
 ## Commands To Run Locally
 
-npm install 
+npm install <br>
 npm install mongodb
 
 *API addded* <br>
@@ -19,10 +19,10 @@ npm install express-rate-limit <br>
 npm install express-validator <br>
 npm install axios express-rate-limit express-session connect-flash express-basic-auth <br>
 
-*To Run Sever*
+*To Run Sever*<br>
 node endurunceServer.js <portNumber>
 
-*Password Information To Delete All from Database*
-ADMIN_USERNAME=admin
+*Password Information To Delete All from Database* <br>
+ADMIN_USERNAME=admin <br>
 ADMIN_PASSWORD=admin12345678
-
+<br>
